@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://cintas.cn/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://cintas.cn/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://cintas.cn/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGarmentsByRoute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="routedesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGarmentsByRouteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGarmentsByRouteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGarmentsByCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customernumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGarmentsByCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGarmentsByCustomerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemByBarcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemByBarcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemByBarcodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCustomerListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryWearerInventoryByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryWearerInventoryByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryWearerInventoryByIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByRouteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGarmentsByRoute" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByRouteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGarmentsByRouteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGarmentsByCustomer" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGarmentsByCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemByBarcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemByBarcode" />
+  </wsdl:message>
+  <wsdl:message name="GetItemByBarcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemByBarcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryWearerInventoryByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryWearerInventoryByID" />
+  </wsdl:message>
+  <wsdl:message name="QueryWearerInventoryByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryWearerInventoryByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByRouteHttpGetIn">
+    <wsdl:part name="routedesc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByRouteHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByCustomerHttpGetIn">
+    <wsdl:part name="customernumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByCustomerHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetItemByBarcodeHttpGetIn">
+    <wsdl:part name="barcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetItemByBarcodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListHttpGetIn" />
+  <wsdl:message name="GetCustomerListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="QueryWearerInventoryByIDHttpGetIn">
+    <wsdl:part name="barcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="QueryWearerInventoryByIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByRouteHttpPostIn">
+    <wsdl:part name="routedesc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByRouteHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByCustomerHttpPostIn">
+    <wsdl:part name="customernumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGarmentsByCustomerHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetItemByBarcodeHttpPostIn">
+    <wsdl:part name="barcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetItemByBarcodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListHttpPostIn" />
+  <wsdl:message name="GetCustomerListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="QueryWearerInventoryByIDHttpPostIn">
+    <wsdl:part name="barcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="QueryWearerInventoryByIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="RSSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByRoute">
+      <wsdl:input message="tns:GetGarmentsByRouteSoapIn" />
+      <wsdl:output message="tns:GetGarmentsByRouteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByCustomer">
+      <wsdl:input message="tns:GetGarmentsByCustomerSoapIn" />
+      <wsdl:output message="tns:GetGarmentsByCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemByBarcode">
+      <wsdl:input message="tns:GetItemByBarcodeSoapIn" />
+      <wsdl:output message="tns:GetItemByBarcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input message="tns:GetCustomerListSoapIn" />
+      <wsdl:output message="tns:GetCustomerListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryWearerInventoryByID">
+      <wsdl:input message="tns:QueryWearerInventoryByIDSoapIn" />
+      <wsdl:output message="tns:QueryWearerInventoryByIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="RSHttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByRoute">
+      <wsdl:input message="tns:GetGarmentsByRouteHttpGetIn" />
+      <wsdl:output message="tns:GetGarmentsByRouteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByCustomer">
+      <wsdl:input message="tns:GetGarmentsByCustomerHttpGetIn" />
+      <wsdl:output message="tns:GetGarmentsByCustomerHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemByBarcode">
+      <wsdl:input message="tns:GetItemByBarcodeHttpGetIn" />
+      <wsdl:output message="tns:GetItemByBarcodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input message="tns:GetCustomerListHttpGetIn" />
+      <wsdl:output message="tns:GetCustomerListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryWearerInventoryByID">
+      <wsdl:input message="tns:QueryWearerInventoryByIDHttpGetIn" />
+      <wsdl:output message="tns:QueryWearerInventoryByIDHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="RSHttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByRoute">
+      <wsdl:input message="tns:GetGarmentsByRouteHttpPostIn" />
+      <wsdl:output message="tns:GetGarmentsByRouteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByCustomer">
+      <wsdl:input message="tns:GetGarmentsByCustomerHttpPostIn" />
+      <wsdl:output message="tns:GetGarmentsByCustomerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemByBarcode">
+      <wsdl:input message="tns:GetItemByBarcodeHttpPostIn" />
+      <wsdl:output message="tns:GetItemByBarcodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input message="tns:GetCustomerListHttpPostIn" />
+      <wsdl:output message="tns:GetCustomerListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryWearerInventoryByID">
+      <wsdl:input message="tns:QueryWearerInventoryByIDHttpPostIn" />
+      <wsdl:output message="tns:QueryWearerInventoryByIDHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RSSoap" type="tns:RSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://cintas.cn/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByRoute">
+      <soap:operation soapAction="http://cintas.cn/GetGarmentsByRoute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByCustomer">
+      <soap:operation soapAction="http://cintas.cn/GetGarmentsByCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemByBarcode">
+      <soap:operation soapAction="http://cintas.cn/GetItemByBarcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <soap:operation soapAction="http://cintas.cn/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryWearerInventoryByID">
+      <soap:operation soapAction="http://cintas.cn/QueryWearerInventoryByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RSSoap12" type="tns:RSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://cintas.cn/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByRoute">
+      <soap12:operation soapAction="http://cintas.cn/GetGarmentsByRoute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByCustomer">
+      <soap12:operation soapAction="http://cintas.cn/GetGarmentsByCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemByBarcode">
+      <soap12:operation soapAction="http://cintas.cn/GetItemByBarcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <soap12:operation soapAction="http://cintas.cn/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryWearerInventoryByID">
+      <soap12:operation soapAction="http://cintas.cn/QueryWearerInventoryByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RSHttpGet" type="tns:RSHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByRoute">
+      <http:operation location="/GetGarmentsByRoute" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByCustomer">
+      <http:operation location="/GetGarmentsByCustomer" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemByBarcode">
+      <http:operation location="/GetItemByBarcode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <http:operation location="/GetCustomerList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryWearerInventoryByID">
+      <http:operation location="/QueryWearerInventoryByID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RSHttpPost" type="tns:RSHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByRoute">
+      <http:operation location="/GetGarmentsByRoute" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGarmentsByCustomer">
+      <http:operation location="/GetGarmentsByCustomer" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemByBarcode">
+      <http:operation location="/GetItemByBarcode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <http:operation location="/GetCustomerList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryWearerInventoryByID">
+      <http:operation location="/QueryWearerInventoryByID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RS">
+    <wsdl:port name="RSSoap" binding="tns:RSSoap">
+      <soap:address location="http://192.168.1.208:54334/RS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RSSoap12" binding="tns:RSSoap12">
+      <soap12:address location="http://192.168.1.208:54334/RS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RSHttpGet" binding="tns:RSHttpGet">
+      <http:address location="http://192.168.1.208:54334/RS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RSHttpPost" binding="tns:RSHttpPost">
+      <http:address location="http://192.168.1.208:54334/RS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
