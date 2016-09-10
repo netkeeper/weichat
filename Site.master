@@ -1,4 +1,4 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="SiteMaster, App_Web_coayutys" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="SiteMaster, App_Web_1enggit0" %>
 
 <!DOCTYPE html>
 
