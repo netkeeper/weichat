@@ -1,0 +1,259 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="SiteMaster, App_Web_coayutys" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Cintas Data Query System</title>
+
+    <!-- For-Mobile-Apps-and-Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //For-Mobile-Apps-and-Meta-Tags -->
+
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+    <link rel="stylesheet" href="css/ken-burns.css" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+
+    <!-- pop-up-box -->
+    <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-top-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+        });
+    </script>
+    <!--//pop-up-box -->
+
+    <!-- web-fonts -->
+    <%--<link href='http://fonts.useso.com/css?family=Abel' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css' />--%>
+    <!-- //web-fonts -->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="agile-main">
+            <div class="menu-wrap" id="style-1">
+                <nav class="top-nav">
+                    <ul class="icon-list">
+                        <li class="menu-title">信达思数据查询</li>
+                        <li><a class="active" href="Default.aspx"><i class="glyphicon glyphicon-home"></i>首页</a></li>
+                        <li><a href="about.html"><i class="glyphicon glyphicon-info-sign"></i>ABS查询</a></li>
+                        <li><a href="property.html"><i class="glyphicon glyphicon-briefcase"></i>其他查询</a></li>
+                        <li><a href="agents.html"><i class="glyphicon glyphicon-eye-open"></i>支持中心</a></li>
+                        <li><a href="gallery.html"><i class="glyphicon glyphicon-picture"></i>问题反馈</a></li>
+                        <li><a href="#" class="menu"><i class="glyphicon glyphicon-duplicate"></i>系统管理<span class="glyphicon glyphicon-menu-down"></span></a>
+                            <ul class="nav-sub">
+                                <li><a href="#small-dialog" class="sign-in popup-top-anim"><i class="glyphicon glyphicon-user"></i>登录</a></li>
+                                <li><a href="#small-dialog1" class="sign-in popup-top-anim"><i class="glyphicon glyphicon-edit"></i>注册</a></li>
+                                <li><a href="codes.html"><i class="glyphicon glyphicon-list-alt"></i>Short Codes</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <script>
+                                $("li a.menu").click(function () {
+                                    $("ul.nav-sub").slideToggle(300, function () {
+                                        // Animation complete.
+                                    });
+                                });
+                            </script>
+                        </li>
+                        <li><a href="contact.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
+                    </ul>
+                </nav>
+               <%-- <button class="close-button" id="close-button">C</button>--%>
+                <a onclick="classie.remove(document.body, 'show-menu');" href="#" class="close-button"><img src="images/H_highlight_off.png"/></a>
+            </div>
+            <div class="content-wrap">
+                <div class="header">
+                    <div class="menu-icon">
+                        <a onclick="classie.add(document.body, 'show-menu');" href="#"><img src="images/H_menu.png"/></a>
+                        <%--<button class="menu-button" id="open-button">O</button>--%>
+                        
+                    </div>
+                    <div class="logo">
+                        <h2><a href="Default.aspx">
+                            <img src="images/main_logo.png" alt="" /></a></h2>
+                    </div>
+                    <div class="login">
+                        <a href="#small-dialog" class="sign-in popup-top-anim"><span class="glyphicon glyphicon-user"></span></a>
+                        <!-- modal -->
+                        <div id="small-dialog" class="mfp-hide">
+                            <div class="login-modal">
+                                <div class="booking-info">
+                                    <h3><a href="main.html">登录系统</a></h3>
+                                </div>
+                                <div class="login-form">
+                                    <div class="styled-input">
+                                        <input type="text" name="Username" />
+                                        <label>Username</label>
+                                        <span></span>
+                                    </div>
+                                    <div class="styled-input">
+                                        <input type="password" name="Password" />
+                                        <label>Password</label>
+                                        <span></span>
+                                    </div>
+                                    <div class="wthree-text">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="brand" value="">
+                                                <label for="brand"><span></span>记住我 ?</label>
+                                            </li>
+                                            <li><a href="#">忘记密码?</a> </li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <input type="submit" value="登录" />
+                                    <p>还没有帐号 ?<a href="#small-dialog1" class="sign-in popup-top-anim"> 注册账号</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //modal -->
+                        <!-- modal-two -->
+                        <div id="small-dialog1" class="mfp-hide">
+                            <div class="login-modal">
+                                <div class="booking-info">
+                                    <h3><a href="Default.aspx">信达思数据查询系统</a></h3>
+                                </div>
+                                <div class="login-form signup-form">
+                                    <div class="styled-input">
+                                        <input type="text" name="Username" />
+                                        <label>Username</label>
+                                        <span></span>
+                                    </div>
+                                    <div class="styled-input">
+                                        <input type="text" name="email"/>
+                                        <label>Email</label>
+                                        <span></span>
+                                    </div>
+                                    <div class="styled-input">
+                                        <input type="password" name="Password" />
+                                        <label>Password</label>
+                                        <span></span>
+                                    </div>
+                                    <div class="wthree-text">
+                                        <input type="checkbox" id="brand1" value="" />
+                                        <label for="brand1"><span></span>I accept the terms of use</label>
+                                    </div>
+                                    <input type="submit" value="注册" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //modal-two -->
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="content">
+                    <!-- banner -->
+                    <div class="banner">
+                        <div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
+                            <!-- Wrapper-for-Slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <!-- First-Slide -->
+                                <div class="item active">
+                                    <div class="banner-img">
+                                    </div>
+                                </div>
+                                <!-- Second-Slide -->
+                                <div class="item">
+                                    <div class="banner-img banner-img1">
+                                    </div>
+                                </div>
+                                <!-- Third-Slide -->
+                                <div class="item">
+                                    <div class="banner-img banner-img2">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left-Button -->
+                            <a class="left carousel-control kb_control_left" href="#kb" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <!-- Right-Button -->
+                            <a class="right carousel-control kb_control_right" href="#kb" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <script src="js/custom.js"></script>
+                    </div>
+                    <!-- //banner -->
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+
+                    <!-- footer -->
+                    <div class="w3agile footer">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="http://twitter.com/CintasCorp"></a></li>
+                                <li><a href="http://www.facebook.com/Cintas" class="fb"></a></li>
+                                <li><a href="http://www.linkedin.com/company/cintas" class="gp"></a></li>
+                                <li><a href="https://www.youtube.com/user/cintas" class="drb"></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="footer-nav">
+                            <ul>
+                                <li><a href="Default.aspx">首页 </a></li>
+                                <li><a href="about.html">ABS查询 </a></li>
+                                <li><a href="property.html">其他查询 </a></li>
+                                <li><a href="gallery.html">支持中心</a></li>
+                                <li><a href="contact.html">问题反馈 </a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="footer-text">
+                            <p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://www.cintas.cn/">信达思中国</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu-js -->
+        <script src="js/classie.js"></script>
+        <script src="js/main.js"></script>
+        <!-- //menu-js -->
+        <!-- nice scroll-js -->
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var nice = $("html").niceScroll();  // The document page (body)
+                $("#div1").html($("#div1").html() + ' ' + nice.version);
+                $("#boxscroll").niceScroll({ cursorborder: "", cursorcolor: "#00F", boxzoom: true }); // First scrollable DIV
+            });
+        </script>
+        <!-- //nice scroll-js -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/bootstrap.js"></script>
+    </form>
+</body>
+</html>
