@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/DXWeichat/global.asax" hash="ffffffff93b99116" filehash="ffffd55c176db17e" flags="150000" assembly="App_global.asax" type="ASP.global_asax">
+    <filedeps>
+        <filedep name="/DXWeichat/global.asax" />
+    </filedeps>
+</preserve>
