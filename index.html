@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>辉润装饰</title>
+    <link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" />
+    <link href="css/Slid-data.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Interior Design Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- responsiveslides -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+    <!-- responsiveslides -->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+            });
+        });
+    </script>
+    <style>
+        .navbar-nav > li > a:hover {
+            background: #3382C9 !important;
+            color: #fff !important;
+        }
+
+        .navbar-nav > li:last-of-type > a {
+            border: 0;
+        }
+
+        @media ( min-width: 768px) {
+            .navbar-nav > li > a {
+                text-align: center;
+                border-right: 1px solid rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header-section-starts -->
+    <div class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <p class="location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>中国江苏省苏州市平江区平泷路1001号平江现代服务大厦2楼B3室。</p>
+                <p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+86-0512-67222505</p>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#"><i class="facebook"> </i></a></li>
+                        <li><a href="#"><i class="twitter"> </i></a></li>
+                        <li><a href="#"><i class="google-plus"> </i></a></li>
+                        <li><a href="#"><i class="dribble"> </i></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container logo text-left" style="padding-bottom:10px;">
+                <a><img src="images/huirun.png" height="90" /></a>
+            </div>
+            <!-- navigation -->
+            <div class="navigation">
+                <div class="container">
+                    <nav class="navbar navbar-inverse equinav" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="navbar-brand">菜单</span>
+                        </div><!-- /.navbar-header -->
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">首页</a></li>
+                                <li><a href="#">我的装修</a></li>
+                                <li><a href="#">装修案例</a></li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">设计中心 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu depth_0">
+                                        <li><a href="#">现代简约</a></li>
+                                        <li><a href="#">欧式风格</a></li>
+                                        <li><a href="#">地中海情节</a></li>
+                                        <li><a href="#">中式风格</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">设计图库</a></li>
+                                <li><a href="#">装修吧</a></li>
+                                <li><a href="#">辉润历程</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+            </div>
+            <!-- //navigation -->
+
+
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+    <div class="screen-shots">
+        <!--sreen-gallery-cursual-->
+        <div class="sreen-gallery-cursual">
+            <!-- start content_slider -->
+            <div id="owl-demo" class="owl-carousel">
+                <div class="item">
+                    <div class="item-grid">
+                        <div class="item-pic">
+                            <img src="images/t1.jpg" alt="" />
+                            <div class="item-text text-center">
+                                <p class="s-para">现代简约</p>
+                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-grid">
+                        <div class="item-pic">
+                            <img src="images/t2.jpg" alt="" />
+                            <div class="item-text text-center">
+                                <p class="s-para">欧式风格</p>
+                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-grid">
+                        <div class="item-pic">
+                            <img src="images/t3.jpg" alt="" />
+                            <div class="item-text text-center">
+                                <p class="s-para">地中海情节</p>
+                                <span class="s-heading">整体家居打造令人愉悦的美式风格生活空间</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-grid">
+                        <div class="item-pic">
+                            <img src="images/t4.jpg" alt="" />
+                            <div class="item-text text-center">
+                                <p class="s-para">地中海情节</p>
+                                <span class="s-heading">整体家居打造令人愉悦的美式风格生活空间</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-grid">
+                        <div class="item-pic">
+                            <img src="images/t1.jpg" alt="" />
+                            <div class="item-text text-center">
+                                <p class="s-para">地中海情节</p>
+                                <span class="s-heading">整体家居打造令人愉悦的美式风格生活空间</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-grid">
+                        <div class="item-pic">
+                            <img src="images/t2.jpg" alt="" />
+                            <div class="item-text text-center">
+                                <p class="s-para">地中海情节</p>
+                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-grid">
+                        <div class="item-pic">
+                            <img src="images/t3.jpg" alt="" />
+                            <div class="item-text text-center">
+                                <p class="s-para">地中海情节</p>
+                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-grid">
+                        <div class="item-pic">
+                            <img src="images/t4.jpg" alt="" />
+                            <div class="item-text text-center">
+                                <p class="s-para">地中海情节</p>
+                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/lightbox.js"></script>
+        <!--//sreen-gallery-cursual-->
+    </div>
+    <!-- requried-jsfiles-for owl -->
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                items: 4,
+                lazyLoad: true,
+                autoPlay: true,
+                navigation: false,
+                navigationText: false,
+                pagination: true,
+            });
+        });
+    </script>
+
+    <!-- //requried-jsfiles-for owl -->
+    <div class="welcome text-center">
+        <div class="container">
+            <h2>欢迎</h2>
+            <p>
+                苏州辉润装饰有限公司是一家大型现代化装饰企业，历经十余年的发展与资源整合，集团已形成由工装、家装双引擎联合驱动的全产业链发展模式，致力为客户带去超高性价比的一站式装饰体验。
+
+                作为一家具有社会责任感和企业荣誉感的装饰企业，成立至今集团坚持以人为本、诚信经营，以引领行业发展为己任，多次实现设计领域的创新与工艺方面的突破。集团拥有工程设计与施工二级资质以及一批身经百战经验丰富的服务团队，并通过信息化移动平台对所有施工工程进行实时、实地的监控管理，全程保障工程质量和进度，从而实现客户利益最大化。
+
+                公司以“成就客户、互利共赢”为经营理念。并以为客户提供高、精、专的装饰装修服务为宗旨。成立至今已为上万个客户提供专业化解决方案，我们始终坚持精品发展战略，走专业化道路。在商业工装领域提出“营销型装饰设计”先进理念，在家装领域着力推出“体验式”服务，受到业内广泛的好评和赞誉。未来我们将进一步整合资源、提升服务，打造中国最具影响力装饰品牌。
+            </p>
+        </div>
+    </div>
+
+    <!--latest designs-->
+    <div id="cate" class="categories">
+        <div class="container">
+            <div class="cat-head">
+                <h3>最新作品</h3>
+            </div>
+            <div class="categorie-grids cs-style-1">
+                <div class="col-md-4 cate-grid grid">
+                    <figure>
+                        <img src="images/c1.jpg" alt="">
+                        <figcaption>
+                            <h3>现代简约</h3>
+                            <span>星湖花海</span>
+                            <a class="example-image-link" href="images/c1.jpg" data-lightbox="example-1" data-title="Interior Design">查看</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 cate-grid grid">
+                    <figure>
+                        <img src="images/c2.jpg" alt="">
+                        <figcaption>
+                            <h3>美式风格</h3>
+                            <span>雅戈尔</span>
+                            <a class="example-image-link" href="images/c2.jpg" data-lightbox="example-1" data-title="Interior Design">查看</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="col-md-4 cate-grid grid">
+                    <figure>
+                        <img src="images/c3.jpg" alt="">
+                        <figcaption>
+                            <h3>欧式风格</h3>
+                            <span>新城香溢澜桥</span>
+                            <a class="example-image-link" href="images/c3.jpg" data-lightbox="example-1" data-title="Interior Design">查看</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-4 cate-grid grid">
+                    <figure>
+                        <img src="images/c4.jpg" alt="">
+                        <figcaption>
+                            <h3>中式风格</h3>
+                            <span>活力岛</span>
+                            <a class="example-image-link" href="images/c4.jpg" data-lightbox="example-1" data-title="Interior Design">查看</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-4 cate-grid grid">
+                    <figure>
+                        <img src="images/c5.jpg" alt="">
+                        <figcaption>
+                            <h3>地中海风格</h3>
+                            <span>都市花园</span>
+                            <a class="example-image-link" href="images/c5.jpg" data-lightbox="example-1" data-title="Interior Design">查看</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-4 cate-grid grid">
+                    <figure>
+                        <img src="images/c6.jpg" alt="">
+                        <figcaption>
+                            <h3>欧美风情</h3>
+                            <span>中海国际社区</span>
+                            <a class="example-image-link" href="images/c6.jpg" data-lightbox="example-1" data-title="Interior Design">查看</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--//latest designs-->
+    <!-- testimonials -->
+    <!--<div class="second-slider">-->
+    <div class="container">
+        <h3 class="tes text-center">设计团队</h3>
+        <div class="sli">
+            <div class="sli-lef">
+                <div class="portfolio-wrapper ">
+                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
+                        <img src="images/designer1.png" class="img-responsive" alt="" />
+                        <ul class="social-ic3">
+                            <div class="slid-data">
+                                <h4>何方<br />擅长风格现代简约、美式风格、欧式风格</h4>
+                            </div>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="sli-lef">
+                <div class="portfolio-wrapper ">
+                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
+                        <img src="images/designer2.png" class="img-responsive" alt="" />
+                        <ul class="social-ic3">
+                            <div class="slid-data">
+                                <h4>余歌<br />擅长风格现代简约、欧美风情、地中海风格、中式风格</h4>
+                            </div>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="sli-lef">
+                <div class="portfolio-wrapper ">
+                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
+                        <img src="images/designer3.png" class="img-responsive" alt="" />
+                        <ul class="social-ic3">
+                            <div class="slid-data">
+                                <h4>Attractive young woman</h4>
+                            </div>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="sli-lef">
+                <div class="portfolio-wrapper ">
+                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
+                        <img src="images/slid4.png" class="img-responsive" alt="" />
+                        <ul class="social-ic3">
+                            <div class="slid-data">
+                                <h4>Attractive young woman</h4>
+                            </div>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="sli-lef">
+                <div class="portfolio-wrapper ">
+                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
+                        <img src="images/slid5.png" class="img-responsive" alt="" />
+                        <ul class="social-ic3">
+                            <div class="slid-data">
+                                <h4>Attractive young woman</h4>
+                            </div>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!--<div  id="top" class="callbacks_container">
+                    <ul class="rslides" id="slider4">
+                        <li>
+                            <div class="sec-slid-info text-center">
+                                <img src="images/tes1.jpg" alt="" />
+                                <h4>lora germo</h4>
+                                <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero.
+                                Nam mi enim, auctor non ultricies a</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sec-slid-info text-center">
+                                <img src="images/tes2.jpg" alt="" />
+                                <h4>suhiga</h4>
+                                <p>Man mi mine, rotcua non ultricies a, allignirf eu susir. Praesent viitae lorem et elit tincidunt accumsan suscipit ue bolero.
+                                Ultricies Nam mi enim, auctor non</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sec-slid-info text-center">
+                                <img src="images/tes3.jpg" alt="" />
+                                <h4>Singem Middile</h4>
+                                <p>Vam mi enim, risus non ultricies a, fringilla eu auctor. Vitae praesent lorem et elit accumsan tincidunt suscipit eu libero.
+                                Auctor Nam mi enim, auctor non</p>
+                            </div>
+                        </li>
+                    </ul>
+        </div>-->
+    </div>
+    <!--</div>-->
+    <!-- //testimonials -->
+    <!-- news -->
+    <div class="news" id="blog">
+        <div class="container">
+            <div class="news-head text-center">
+                <h3>样板工地</h3>
+                <p>Cras porttitor imperdiet volutpat nulla malesuada lectus eros ut convallis felis consectetur ut</p>
+            </div>
+            <div class="news-grids">
+                <div class="col-md-4 news-grid">
+                    <a href="single.html">Interior design article post</a>
+                    <span>Posted by <a class="admin" href="#">Admin</a>on 09 JUN 2015</span>
+                    <a class="mask" href="single.html"><img src="images/img1.jpg" class="img-responsive zoom-img" alt="" /></a>
+                    <div class="news-info">
+                        <p>
+                            【北欧家装】180㎡北欧家装｜某某小区<br />
+                            项目地址： 	江苏苏州<br />
+                            项目面积： 	180m2<br />
+                            项目时间： 	2016<br />
+                            项目说明： 	简洁之美，明快清新的家
+                        </p>
+                        <a class="button" href="single.html"><img src="images/read1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-4 news-grid">
+                    <a href="single.html">Interior design article post</a>
+                    <span>Posted by <a class="admin" href="#">Admin</a>on 24 SEP 2015</span>
+                    <a class="mask" href="single.html"><img src="images/img2.jpg" class="img-responsive zoom-img" alt="" /></a>
+                    <div class="news-info">
+                        <p>
+                            【北欧家装】180㎡北欧家装｜某某小区<br />
+                            项目地址： 	江苏苏州<br />
+                            项目面积： 	180m2<br />
+                            项目时间： 	2016<br />
+                            项目说明： 	简洁之美，明快清新的家
+                        </p>
+                        <a class="button" href="single.html"><img src="images/read1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-4 news-grid">
+                    <a href="single.html">Interior design article post</a>
+                    <span>Posted by <a class="admin" href="#">Admin</a>on 15 FEB 2015</span>
+                    <a class="mask" href="single.html"><img src="images/img3.jpg" class="img-responsive zoom-img" alt="" /></a>
+                    <div class="news-info">
+                        <p>
+                            【北欧家装】180㎡北欧家装｜某某小区<br />
+                            项目地址： 	江苏苏州<br />
+                            项目面积： 	180m2<br />
+                            项目时间： 	2016<br />
+                            项目说明： 	简洁之美，明快清新的家
+                        </p>
+                        <a class="button" href="single.html"><img src="images/read1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-4 news-grid">
+                    <a href="single.html">Interior design article post</a>
+                    <span>Posted by <a class="admin" href="#">Admin</a>on 10 JUN 2015</span>
+                    <a class="mask" href="single.html"><img src="images/img4.jpg" class="img-responsive zoom-img" alt="" /></a>
+                    <div class="news-info">
+                        <p>
+                            【北欧家装】180㎡北欧家装｜某某小区<br />
+                            项目地址： 	江苏苏州<br />
+                            项目面积： 	180m2<br />
+                            项目时间： 	2016<br />
+                            项目说明： 	简洁之美，明快清新的家
+                        </p>
+                        <a class="button" href="single.html"><img src="images/read1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-4 news-grid">
+                    <a href="single.html">Interior design article post</a>
+                    <span>Posted by <a class="admin" href="#">Admin</a>on 09 JUN 2015</span>
+                    <a class="mask" href="single.html"><img src="images/img1.jpg" class="img-responsive zoom-img" alt="" /></a>
+                    <div class="news-info">
+                        <p>
+                            【北欧家装】180㎡北欧家装｜某某小区<br />
+                            项目地址： 	江苏苏州<br />
+                            项目面积： 	180m2<br />
+                            项目时间： 	2016<br />
+                            项目说明： 	简洁之美，明快清新的家
+                        </p>
+                        <a class="button" href="single.html"><img src="images/read1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-4 news-grid">
+                    <a href="single.html">Interior design article post</a>
+                    <span>Posted by <a class="admin" href="#">Admin</a>on 24 SEP 2015</span>
+                    <a class="mask" href="single.html"><img src="images/img2.jpg" class="img-responsive zoom-img" alt="" /></a>
+                    <div class="news-info">
+                        <p>
+                            【北欧家装】180㎡北欧家装｜某某小区<br />
+                            项目地址： 	江苏苏州<br />
+                            项目面积： 	180m2<br />
+                            项目时间： 	2016<br />
+                            项目说明： 	简洁之美，明快清新的家
+                        </p>
+                        <a class="button" href="single.html"><img src="images/read1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //news -->
+    <!-- footer-section -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="col-md-4 footer-grid">
+                    <h5>关于我们</h5>
+                    <p>
+                        苏州辉润装饰工程有限公司专业从事室内设计、施工、装饰！有专业装修队伍，设计思想独特、装修 经验丰富！“厂房、办公楼、宾馆、酒吧、专卖店、大小商铺、家庭”的各类工程我们都有实际案例。
+                        公司有多家正规品牌材料供应商、多名设计师，有专业的水电工、泥工、油漆工。我们专业的态度，最真诚的服务赢得您的肯定！本公司诚信第一、质量到位、服务周到！欢迎您选择苏州市辉润装饰工程有限公司。
+                    </p>
+                </div>
+                <div class="col-md-4 footer-grid">
+                    <h5>公司动态</h5>
+                    <p>8月25日，百度苏州营销体验中心正式在苏州工业园区尼盛广场开业！在当天的开业庆典上，中国高品质家装的...<br>at <a href="mail-to:mail@example.com">查看详情</a></p>
+                    <span>1 day ago</span>
+                    <p>8月25日，百度苏州营销体验中心正式在苏州工业园区尼盛广场开业！在当天的开业庆典上，中国高品质家装的...<br>at <a href="mail-to:mail@example.com">查看详情</a></p>
+                    <span>1 day ago</span>
+                </div>
+                <div class="col-md-4 footer-grid">
+                    <h5>联系我们</h5>
+                    <p>
+                        中国·苏州市辉润装饰工程有限公司<br />
+                        地址：中国江苏省苏州市平江区平泷路1001号平江现代服务大厦2楼B3室<br />
+                        邮编：215031<br />
+                        电话：+86-0512-67222505<br />
+                        传真：+86-0512-67222505<br />
+                        手机：13776064695或15850215118<br />
+                        联系人：王先生<br />
+                        质量技术咨询： 13913172581<br />
+                        客服QQ一部:384347262<br />
+                        客服QQ二部:1044158133<br />
+                        E-mail：szhuirun@163.com
+                    </p>
+
+                    <div class="social-icons footer-social-icons">
+                        <a href="#"><i class="facebook"></i></a>
+                        <a href="#"><i class="twitter"></i></a>
+                        <a href="#"><i class="google-plus"></i></a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyrights col-md-10">
+                    <p>© 2016 辉润装饰. All Rights Reserved | Design by   <a href="#">  Henry Huang</a></p>
+                </div>
+                <div class="go-top col-md-2">
+                    <a href="#header" class="scroll"><span class="glyphicon glyphicon-chevron-up"></span></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer-section --><script src="js/index.js"></script>
+</body>
+</html>
