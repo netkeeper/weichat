@@ -6,7 +6,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 @font-face {
     font-family: 'Zhulang';
-    src: url('../fonts/zlst.otf');
+    src: url('../fonts/zlst-webfont.woff2') format('woff2'),
+         url('../fonts/zlst-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
