@@ -12,7 +12,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" />
     <link href="css/Slid-data.css" rel="stylesheet" type="text/css" media="all" />
-    
+
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,28 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //for bootstrap working -->
     <!-- web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <!-- responsiveslides -->
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
-        // You can also use "$(window).load(function() {"
-        $(function () {
-            // Slideshow 4
-            $("#slider4").responsiveSlides({
-                auto: true,
-                pager: true,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                before: function () {
-                    $('.events').append("<li>before event fired.</li>");
-                },
-                after: function () {
-                    $('.events').append("<li>after event fired.</li>");
-                }
-            });
-        });
-    </script>
-    <!-- responsiveslides -->
+
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -54,23 +33,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
-    <style>
-        .navbar-nav > li > a:hover {
-            background: #3382C9 !important;
-            color: #fff !important;
-        }
-
-        .navbar-nav > li:last-of-type > a {
-            border: 0;
-        }
-
-        @media ( min-width: 768px) {
-            .navbar-nav > li > a {
-                text-align: center;
-                border-right: 1px solid rgba(0,0,0,0.1);
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- header-section-starts -->
@@ -129,124 +91,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <!-- //navigation -->
-
-
             <div class="clearfix"></div>
         </div>
-
     </div>
-    <div class="screen-shots">
-        <!--sreen-gallery-cursual-->
-        <div class="sreen-gallery-cursual">
-            <!-- start content_slider -->
-            <div id="owl-demo" class="owl-carousel">
-                <div class="item">
-                    <div class="item-grid">
-                        <div class="item-pic">
-                            <img src="images/t1.jpg" alt="" />
-                            <div class="item-text text-center">
-                                <p class="s-para">现代简约</p>
-                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
-                            </div>
+
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-md-12 backg">
+                <div class="col-md-4 col-md-offset-1 inner col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1">
+                    <div class="text-box">
+                        <p class="intro">家装要花多少钱？</p>
+                        <p class="intro">10秒填写表单获取精准报价</p>
+                        <div>
+                            <input id="Text1" type="text" Class="form-control" placeholder="您的姓名" />
+                            <input id="Text1" type="number" Class="form-control" placeholder="联系电话" />
+                            <input id="Text1" type="text" Class="form-control" placeholder="楼盘名称" />
+                            <input id="Text1" type="number" Class="form-control" placeholder="房屋面积（平方米）" />
                         </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-grid">
-                        <div class="item-pic">
-                            <img src="images/t2.jpg" alt="" />
-                            <div class="item-text text-center">
-                                <p class="s-para">欧式风格</p>
-                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-grid">
-                        <div class="item-pic">
-                            <img src="images/t3.jpg" alt="" />
-                            <div class="item-text text-center">
-                                <p class="s-para">地中海情节</p>
-                                <span class="s-heading">整体家居打造令人愉悦的美式风格生活空间</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-grid">
-                        <div class="item-pic">
-                            <img src="images/t4.jpg" alt="" />
-                            <div class="item-text text-center">
-                                <p class="s-para">地中海情节</p>
-                                <span class="s-heading">整体家居打造令人愉悦的美式风格生活空间</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-grid">
-                        <div class="item-pic">
-                            <img src="images/t1.jpg" alt="" />
-                            <div class="item-text text-center">
-                                <p class="s-para">地中海情节</p>
-                                <span class="s-heading">整体家居打造令人愉悦的美式风格生活空间</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-grid">
-                        <div class="item-pic">
-                            <img src="images/t2.jpg" alt="" />
-                            <div class="item-text text-center">
-                                <p class="s-para">地中海情节</p>
-                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-grid">
-                        <div class="item-pic">
-                            <img src="images/t3.jpg" alt="" />
-                            <div class="item-text text-center">
-                                <p class="s-para">地中海情节</p>
-                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-grid">
-                        <div class="item-pic">
-                            <img src="images/t4.jpg" alt="" />
-                            <div class="item-text text-center">
-                                <p class="s-para">地中海情节</p>
-                                <span class="s-heading">现代风格外形简洁、功能强，强调室内空间形态和物件的单一性、抽象性。</span>
-                            </div>
-                        </div>
+                        <p><button type="button" class="btn btn-danger btn-lg btn-block">免费获取</button></p>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="js/lightbox.js"></script>
-        <!--//sreen-gallery-cursual-->
     </div>
-    <!-- requried-jsfiles-for owl -->
-    <script src="js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo").owlCarousel({
-                items: 4,
-                lazyLoad: true,
-                autoPlay: true,
-                navigation: false,
-                navigationText: false,
-                pagination: true,
-            });
-        });
-    </script>
 
     <!-- //requried-jsfiles-for owl -->
     <div class="welcome text-center">
@@ -344,97 +211,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--<div class="second-slider">-->
     <div class="container">
         <h3 class="tes text-center">设计团队</h3>
-        <div class="sli">
-            <div class="sli-lef">
-                <div class="portfolio-wrapper ">
-                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
-                        <img src="images/designer1.png" class="img-responsive" alt="" />
-                        <ul class="social-ic3">
-                            <div class="slid-data">
-                                <h4>何方<br />擅长风格现代简约、美式风格、欧式风格</h4>
-                            </div>
-                        </ul>
-                    </a>
-                </div>
+        <!--team-->
+        <div class="team-info">
+            <div class="col-md-3 team-grids">
+                <a href="#">
+                    <img class="img-responsive" src="images/d1.png" alt="">
+                    <div class="captn">
+                        <h4>何方</h4>
+                        <p>Aenean pulvinar ac enimet posuere tincidunt velit Utin tincidunt</p>
+                    </div>
+                </a>
             </div>
-            <div class="sli-lef">
-                <div class="portfolio-wrapper ">
-                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
-                        <img src="images/designer2.png" class="img-responsive" alt="" />
-                        <ul class="social-ic3">
-                            <div class="slid-data">
-                                <h4>余歌<br />擅长风格现代简约、欧美风情、地中海风格、中式风格</h4>
-                            </div>
-                        </ul>
-                    </a>
-                </div>
+            <div class="col-md-3 team-grids">
+                <a href="#">
+                    <img class="img-responsive" src="images/d2.png" alt="">
+                    <div class="captn">
+                        <h4>Velit uti</h4>
+                        <p>Aenean pulvinar ac enimet posuere tincidunt velit Utin tincidunt</p>
+                    </div>
+                </a>
             </div>
-            <div class="sli-lef">
-                <div class="portfolio-wrapper ">
-                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
-                        <img src="images/designer3.png" class="img-responsive" alt="" />
-                        <ul class="social-ic3">
-                            <div class="slid-data">
-                                <h4>Attractive young woman</h4>
-                            </div>
-                        </ul>
-                    </a>
-                </div>
+            <div class="col-md-3 team-grids">
+                <a href="#">
+                    <img class="img-responsive" src="images/d3.png" alt="">
+                    <div class="captn">
+                        <h4>Posuere</h4>
+                        <p>Aenean pulvinar ac enimet posuere tincidunt velit Utin tincidunt</p>
+                    </div>
+                </a>
             </div>
-            <div class="sli-lef">
-                <div class="portfolio-wrapper ">
-                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
-                        <img src="images/slid4.png" class="img-responsive" alt="" />
-                        <ul class="social-ic3">
-                            <div class="slid-data">
-                                <h4>Attractive young woman</h4>
-                            </div>
-                        </ul>
-                    </a>
-                </div>
-            </div>
-            <div class="sli-lef">
-                <div class="portfolio-wrapper ">
-                    <a href="details.html" class="b-link-stripe b-animate-go  thickbox play-icon">
-                        <img src="images/slid5.png" class="img-responsive" alt="" />
-                        <ul class="social-ic3">
-                            <div class="slid-data">
-                                <h4>Attractive young woman</h4>
-                            </div>
-                        </ul>
-                    </a>
-                </div>
+            <div class="col-md-3 team-grids">
+                <a href="#">
+                    <img class="img-responsive" src="images/img6.jpg" alt="">
+                    <div class="captn">
+                        <h4>Augc sfe</h4>
+                        <p>Aenean pulvinar ac enimet posuere tincidunt velit Utin tincidunt</p>
+                    </div>
+                </a>
             </div>
             <div class="clearfix"> </div>
         </div>
-        <!--<div  id="top" class="callbacks_container">
-                    <ul class="rslides" id="slider4">
-                        <li>
-                            <div class="sec-slid-info text-center">
-                                <img src="images/tes1.jpg" alt="" />
-                                <h4>lora germo</h4>
-                                <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero.
-                                Nam mi enim, auctor non ultricies a</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sec-slid-info text-center">
-                                <img src="images/tes2.jpg" alt="" />
-                                <h4>suhiga</h4>
-                                <p>Man mi mine, rotcua non ultricies a, allignirf eu susir. Praesent viitae lorem et elit tincidunt accumsan suscipit ue bolero.
-                                Ultricies Nam mi enim, auctor non</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sec-slid-info text-center">
-                                <img src="images/tes3.jpg" alt="" />
-                                <h4>Singem Middile</h4>
-                                <p>Vam mi enim, risus non ultricies a, fringilla eu auctor. Vitae praesent lorem et elit accumsan tincidunt suscipit eu libero.
-                                Auctor Nam mi enim, auctor non</p>
-                            </div>
-                        </li>
-                    </ul>
-        </div>-->
     </div>
     <!--</div>-->
     <!-- //testimonials -->
@@ -443,7 +259,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
             <div class="news-head text-center">
                 <h3>样板工地</h3>
-                <p>Cras porttitor imperdiet volutpat nulla malesuada lectus eros ut convallis felis consectetur ut</p>
             </div>
             <div class="news-grids">
                 <div class="col-md-4 news-grid">
@@ -541,6 +356,94 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!-- //news -->
+
+    
+    <!---->
+    <script src="js/responsiveslides.min.js"></script>
+    <div id="testi" class="testimonal">
+        <div class="container">
+            <div class="testi-top">
+                <h3>客户感言</h3>
+            </div>
+            <div class="testi-slider">
+
+                <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider2").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+
+						});
+                </script>
+                <div id="top" class="callbacks_container">
+                    <ul class="rslides" id="slider2">
+                        <li>
+                            <div class="testimonial-grids">
+                                <div class="testimonial-left">
+                                    <img src="images/t5.jpg" alt="" />
+                                </div>
+                                <div class="testimonial-right">
+                                    <p>
+                                        <span>"</span> 苏州辉润装饰工程有限公司专业从事室内设计、施工、装饰！有专业装修队伍，设计思想独特、装修 经验丰富！“厂房、办公楼、宾馆、酒吧、专卖店、大小商铺、家庭”的各类工程我们都有实际案例。 公司有多家正规品牌材料供应商、多名设计师，有专业的水电工、泥工、油漆工。<span>"</span>
+                                    </p>
+                                    <h5>张先生</h5>
+                                    <h6>纺织集团,CEO</h6>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="testimonial-grids">
+                                <div class="testimonial-left">
+                                    <img src="images/t6.jpg" alt="" />
+                                </div>
+                                <div class="testimonial-right">
+                                    <p>
+                                        <span>"</span> Lorem ipsum dolor sit amet consec tetuer adi piscing elit Praesent vestibulum
+                                        piscing voluptatem Nunc a suscipit mauris. Praesent suscipit, metus sit amet feugiat hendrerit, enim lacinia velit eros sed massa. In vulputate justo in vitae lacus accusantium doloremque laudantium elerisque ipsum vehicula pharetra elit Praesent vestibulum lacus<span>"</span>
+                                    </p>
+                                    <h5>李先生</h5>
+                                    <h6>Manager</h6>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="testimonial-grids">
+                                <div class="testimonial-left">
+                                    <img src="images/t7.jpg" alt="" />
+                                </div>
+                                <div class="testimonial-right">
+                                    <p>
+                                        <span>"</span> Lorem ipsum dolor sit amet consec tetuer adi piscing elit Praesent vestibulum
+                                        piscing voluptatem accusantium doloremque laudantium elerisque ipsum Nunc a suscipit mauris. Praesent suscipit, metus sit amet feugiat hendrerit, enim lacinia velit eros sed massa. In vulputate justo in vitae lacus vehicula pharetra elit Praesent vestibulum lacus<span>"</span>
+                                    </p>
+                                    <h5>王小姐</h5>
+                                    <h6>Traveller,Asst.</h6>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+
     <!-- footer-section -->
     <div class="footer">
         <div class="footer-top">
@@ -596,6 +499,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-    <!-- //footer-section --><script src="js/index.js"></script>
+    <!-- //footer-section -->
+    <script src="js/index.js"></script>
 </body>
 </html>
